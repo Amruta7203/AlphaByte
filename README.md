@@ -1,2 +1,2 @@
 # AlphaByte
-GDSC hackathon
+GDSC hackathon website 2024
