@@ -3,6 +3,13 @@ html {
   overflow-x: hidden;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
 body::-webkit-scrollbar {
   width: 6px; /* width of the entire scrollbar */
 }
@@ -2828,18 +2835,17 @@ nav {
 background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5,0.5344188700870973) 44%, rgba(3,3,3,1) 100%);
 }
 
-
 .am-body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	/* background: linear-gradient(0deg, rgb(61, 44, 44), rgb(6, 6, 9)); */
+	min-height: 190vh;
+	background: linear-gradient(0deg, rgb(61, 44, 44), rgb(6, 6, 9));
 	/* background-attachment: fixed; */
 	background-image: url("../img/background/Background.png") !important; /* Set the background image */
 	background-size: cover; /* Cover the entire body */
 	background-position: center; /* Center the background image */
-  margin-bottom: 200px;
+	
 }
 
 .am-row {
@@ -2853,7 +2859,7 @@ background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5
 
 .am-section-title-header .am-section-title {
 	margin-left: 10px;
-	margin-top: -480px;
+	margin-top: -600px;
 	font-size: 30px;
 	color: #fff !important ;
 	line-height: 52px;
@@ -2897,6 +2903,7 @@ background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5
 	flex-wrap: wrap;
 	padding: 20px 0;
 	z-index: 1;
+  padding-bottom: 200px
 }
 
 .am-container .am-card {
@@ -2972,14 +2979,22 @@ background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5
 
 @media (max-width: 992px) {
 	.am-section-title-header {
-		margin-top: -1100px;
+		margin-top: -550px;
 	}
 
 	.am-container {
-		position: relative;
-		width: 100%;
-		flex-direction: column;
-		align-items: center;
+    top: 150px;
+    position: relative;
+    width: 1000px;
+    margin: -0.5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    z-index: 1;
+    padding-bottom: 200px;
 	}
 
 	.am-container .am-card {
@@ -3012,21 +3027,22 @@ background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5
 		max-width: 60px;
 	}
 
-	.am-container .am-card .am-content {
-		position: relative;
-		width: 100%;
-		/* background: white; */
-		box-shadow: none;
-		border-radius: 20px;
-		padding: 20px 40px;
-		border-top: 1px solid #fff;
-		border-left: 1px solid #fff;
-	}
+  .am-container .am-card .am-content {
+  position: relative;
+  width: 100%;
+  margin-left: -50px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  padding: 20px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05); /* Adjust opacity as needed */
+  backdrop-filter: blur(20px); /* Apply blur effect */
+}
 }
 
 @media (max-width: 600px) {
 	.am-section-title-header {
-		margin-top: -1100px;
+		margin-top: -970px;
 	}
 
 	.am-container {
@@ -3037,11 +3053,11 @@ background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5
 	}
 
 	.am-container .am-card {
-		max-width: 300px;
+		max-width: 180px;
 		height: auto;
 		flex-direction: column;
 		background: transparent;
-		margin: -20px 0;
+		margin: -20px -20px auto -20px ;
 		border: none;
 	}
 
@@ -3066,14 +3082,22 @@ background: linear-gradient(0deg, rgba(5,5,5,0.10024520061931019) 0%, rgba(5,5,5
 		max-width: 40px;
 	}
 
-	.am-container .am-card .am-content {
-		position: relative;
-		width: 100%;
-		/* background: white; */
-		box-shadow: none;
-		border-radius: 20px;
-		padding: 20px 40px;
-		border-top: 1px solid #fff;
-		border-left: 1px solid #fff;
+  .am-container .am-card .am-content {
+    position: relative;
+    width: 190%;
+    margin-left: -70px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    padding: 20px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05); /* Adjust opacity as needed */
+    backdrop-filter: blur(20px); /* Apply blur effect */
+}
+}
+
+
+@media (max-width: 450px) {
+  .am-section-title-header {
+		margin-top: -970px;
 	}
 }
