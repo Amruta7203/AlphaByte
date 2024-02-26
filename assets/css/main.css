@@ -9,6 +9,138 @@ html {
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
+/* button-css */
+.blue{
+  font-family: inherit;
+  font-size: 20px;
+  background:royalblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width:300px;
+  height:45px;
+}
+.green {
+  font-family: inherit;
+  font-size: 20px;
+  background: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width:300px;
+  height:45px;
+}
+.src{
+  width:40px;
+  border-radius:16px;
+}
+
+a span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+a:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1)
+}
+a .svg-wrapper {
+  transition: transform 0.5s ease; /* Add transition for transform property */
+}
+
+
+a:hover span {
+  transform: translateX(15em);
+
+}
+a:hover .src {
+  
+  transform: translateX(280%) ;
+  transition: transform 0.5s ease; /* Add transition for transform property */
+}
+
+a:active {
+  transform: scale(0.95);
+}
+.svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Set the width of the SVG container */
+  margin-right: 0.5em; /* Adjust spacing between logo and text */
+}
+
+.blue span {
+  display: block;
+  margin-left: 0.3em; /* Adjust spacing between logo and text */
+}
+
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+
+
+.buttoncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+}
+@media only screen and (max-width: 600px) {
+  .blue,
+  .green {
+    width: 250px; /* Adjust button width for mobile phones */
+    font-size: 18px; /* Reduce font size for mobile phones */
+
+  }
+  
+  .svg-wrapper {
+    width: 30px; /* Adjust logo size for mobile phones */
+  }
+
+  .buttoncontainer {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+  
+  .blue span,
+  .green span {
+    /* Remove margin between logo and text for mobile phones */
+    margin:auto;
+
+  
+  }
+  
+  .blue,
+  .green {
+    margin-bottom: 5px; /* Reduce spacing between buttons for mobile phones */
+  }
+}
+
+
+
+
+.buttoncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 body::-webkit-scrollbar {
   width: 6px; /* width of the entire scrollbar */
