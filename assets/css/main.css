@@ -102,6 +102,7 @@ a:active {
   align-items: center;
   justify-content: center;
   gap:30px;
+  margin-top: -200px;
 }
 @media only screen and (max-width: 600px) {
   .blue,
@@ -2769,7 +2770,7 @@ div#clock {
     display: block;
   }
   #hero-area .contents .banner-btn {
-    margin-top: 0px;
+    margin-top: 250px;
   }
 }
 @media (max-width: 445px) {
