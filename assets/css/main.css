@@ -11,7 +11,7 @@ html {
 }
 /* button-css */
 .blue {
-  padding: 10px;
+	padding: 10px;
 	font-family: inherit;
 	font-size: 20px;
 	background: royalblue;
@@ -27,7 +27,7 @@ html {
 	height: 50px;
 }
 .green {
-  padding: 10px;
+	padding: 10px;
 	font-family: inherit;
 	font-size: 20px;
 	background: green;
@@ -2773,9 +2773,9 @@ div#clock {
 		height: 100vh;
 	}
 
-  .buttoncontainer {
-    margin-top: 40px;
-  }
+	.buttoncontainer {
+		margin-top: 40px;
+	}
 
 	#hero-register {
 	}
@@ -3115,6 +3115,14 @@ nav {
 		margin-top: -550px;
 	}
 
+	.navbar-toggler {
+		margin: 5px !important;
+		height: 30px !important;
+		width: 40px !important;
+		display: flex !important;
+		justify-content: center !important;
+	}
+
 	.am-container {
 		top: 150px;
 		position: relative;
@@ -3178,10 +3186,10 @@ nav {
 		margin-top: -970px;
 	}
 
-  #main-logo {
-    height: 200px;
-    width: 300px;
-  }
+	#main-logo {
+		height: 200px;
+		width: 300px;
+	}
 
 	.am-container {
 		position: relative;
