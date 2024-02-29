@@ -467,21 +467,39 @@
         </div>
       </div>
     </section>
-        <!-- Sponsors Section End -->
-    
-    
-        <!-- Rule Book Section Start -->
-        <section class="rulebook-section" style="background-color: black;padding-top: 58px;">
-          <div class="section-title-header text-center" style="background-color: transparent;">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Rule Book</h2>
+    <!-- Sponsors Section End -->
+<!-- Sponsors Section End -->
+<!-- Rule Book Section Start -->
+<section class="rulebook-section" style="background-color: black; padding-top: 58px;">
+  <div class="section-title-header text-center" style="background-color: transparent;">
+    <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Rule Book</h2>
+  </div>
+
+  <div class="container rulebook-container">
+    <img class="rulebook" id="rulebook_id"/>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="container roulebook-container" >
-            <img class="rulebook" id="rulebook_id"/>
-            <a href="https://drive.google.com/drive/folders/1IJ6fgqE-DhG306Vi65KkJ6Qfz4Hi02tU"><button class="rulebook-button">Rule Book</button></a>
-          </div>
-        </section>
-        <!-- Rule book section end -->
-    
+          <!-- <div class="modal-body"> -->
+            <iframe src="assets/AlphaByteRulebook.pdf" width="600" height="780" frameborder="0" scrolling="auto"></iframe>
+
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+    <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Rule Book</a>
+    <!-- <a href="https://drive.google.com/drive/folders/1IJ6fgqE-DhG306Vi65KkJ6Qfz4Hi02tU"><button class="rulebook-button"></button></a> -->
+  </div>
+</section>
+<!-- Rule book section end -->
+
 
     <!-- FAQ Section Start -->
     <section id="faq" class="am-body">
@@ -637,7 +655,7 @@
               <!-- Grid column -->
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!" class="text-white">About us</a>
+                  <a href="#!" class="text-white">Instagram</a>
                 </h6>
               </div>
               <!-- Grid column -->
@@ -645,7 +663,7 @@
               <!-- Grid column -->
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!" class="text-white">Products</a>
+                  <a href="#!" class="text-white">Facebook</a>
                 </h6>
               </div>
               <!-- Grid column -->
@@ -653,7 +671,7 @@
               <!-- Grid column -->
               <div class="col-md-2">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!" class="text-white">Awards</a>
+                  <a href="#!" class="text-white">Twitter</a>
                 </h6>
               </div>
               <!-- Grid column -->
@@ -735,6 +753,24 @@
       <!-- Footer -->
     </div>
     <!-- End of .container -->
+    <script>const exampleModal = document.getElementById('exampleModal')
+      if (exampleModal) {
+        exampleModal.addEventListener('show.bs.modal', event => {
+          // Button that triggered the modal
+          const button = event.relatedTarget
+          // Extract info from data-bs-* attributes
+          const recipient = button.getAttribute('data-bs-whatever')
+          // If necessary, you could initiate an Ajax request here
+          // and then do the updating in a callback.
+      
+          // Update the modal's content.
+          const modalTitle = exampleModal.querySelector('.modal-title')
+          const modalBodyInput = exampleModal.querySelector('.modal-body input')
+      
+          modalTitle.textContent = `New message to ${recipient}`
+          modalBodyInput.value = recipient
+        })
+      }</script>
     <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Mar 18, 2024 23:59:59").getTime();

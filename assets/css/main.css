@@ -10,6 +10,10 @@ html {
 	font-family: "Tomorrow", "Poppins", sans-serif;
 }
 
+.modal-body {
+	padding: 0px !important;
+}
+
 #main-logo {
 	margin-top: -55px;
 }
