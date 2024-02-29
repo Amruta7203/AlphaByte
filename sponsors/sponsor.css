@@ -97,19 +97,31 @@
 }
 
 .sponsor-glass-morph:hover {
-	background: rgba(0, 204, 255, 0.65);
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	cursor: pointer;
+}
+/* For screens smaller than 768px (typical phone screens) */
+@media only screen and (max-width: 767px) {
+	.sponser-main-section {
+		padding: 20px 20px 20px 70px;
+	}
+}
+
+@media only screen and (min-width: 515px) and (max-width: 768px) {
+	.sponser-main-section {
+		padding: 20px 20px 20px 105px !important;
+	}
+}
+
+@media only screen and (max-width: 515px) {
+	.sponser-main-section {
+		padding: 20px 20px 20px 50px !important;
+	}
 }
 
 @media screen and (max-width: 990px) {
 	#sponsor-img {
-		width: 35px;
-		height: 35px;
+		width: 100%;
+		height: 100%;
 	}
 
 	#sponsor-heading-new {
@@ -127,4 +139,13 @@
 		top: 65% !important;
 		left: 33%;
 	}
+}
+
+.sponsers-main-div {
+	width: 300px;
+	height: 180px;
+}
+.sponser-main-section {
+	background-color: #0b1217;
+	padding: 20px 20px 20px 20px;
 }
