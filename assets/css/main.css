@@ -2727,162 +2727,96 @@ h1 {
 
 /* Footer Area Start */
 footer {
-	background: #161e26;
+	background-color: #000000;
+	padding: 50px;
+  }
+  
+  footer .pages {
 	text-align: center;
-}
+  }
+  
+  footer .pages h3 {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 5px;
+  }
+  
+  footer .pages a {
+	text-decoration: none;
+	margin: 10px;
+	color: #810541;
+	font-size: 15px;
+  }
+  
+  footer .pages a:hover {
+	color: purple;
+  }
 
-.site-info {
-	position: relative;
-	padding: 30px 0;
-	margin-bottom: 30px;
-}
-
-.site-info p {
-	font-size: 13px;
-	color: #9e9e9e;
-}
-
-.site-info a {
-	color: #fff;
-}
-
-.site-info a:hover {
-	color: #00bfff;
-}
-
-.social-icons-footer ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.social-icons-footer ul li {
-	display: inline-block;
-}
-
-.social-icons-footer a {
-	color: #888;
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 5px;
+  
+  footer .social {
+	text-align: center;
+	margin-top:30px;
+  }
+  
+  footer .social h3 {
 	margin-bottom: 15px;
-	border-radius: 4px;
-	border: 1px solid rgba(255, 254, 254, 0.07);
-	line-height: 40px;
-	width: 40px;
-	height: 40px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 5px;
+  }
+  footer .social a{
+	text-decoration: none;
+	font-size: 30px;
+	color: #810541;
+	margin: 10px;
+	display: inline;
+
+  }
+  footer .social a:hover{
+	color: white;
+  }
+  
+  footer .contact-mu {
 	text-align: center;
-	font-size: 16px;
-}
+	margin-top:30px;
+  }
+  
+  footer .contact-mu h3 {
+	margin-bottom: 15px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	padding: 5px;
+  }
+  footer .contact-mu a {
+	text-decoration: none;
+	font-size: 30px;
+	color: #810541;
+	margin: 10px;
+  }
+  footer .contact-mu a:hover {
+	color: white;
+  }
+  
+  .pages,.copyright{
+	  color:grey;
+	  text-align: center;
+  }
+  .copyright{
+	margin-top:50px;
 
-.social-icons-footer .facebook a:hover {
-	border-color: #2b4ead;
+  }
+  @media (max-width: 767px) {
+    .footer_logo {
+        text-align: center;
+    }
+    .footer_logo img {
+        display: block;
+        margin: 0 auto;
+    }
+	footer .pages a {
+	font-size:18px;
+    }
 }
-.social-icons-footer .facebook a i,
-.social-icons-footer .twitter a i,
-.social-icons-footer .pinterest a i {
-	color: #2b72ad !important;
-}
-
-.social-icons-footer .twitter a:hover {
-	border-color: #2b4ead;
-}
-
-.social-icons-footer .linkedin a:hover {
-	border-color: #2b4ead;
-}
-
-.social-icons-footer .google a:hover {
-	border-color: #2b4ead;
-}
-
-.social-icons-footer .pinterest a:hover {
-	border-color: #00bfff;
-}
-
-.link-list {
-	margin: 15px;
-}
-
-.link-list li {
-	display: inline-block;
-	padding: 7px 10px;
-}
-
-.link-list li a {
-	color: #9e9e9e;
-}
-
-.link-list li a:hover {
-	color: #0000ff;
-}
-
-/* Subscribe Form */
-.subscribe-inner {
-	padding: 50px 0;
-	text-align: center;
-}
-
-.subscribe-inner .subscribe-title {
-	color: #fff;
-	font-size: 26px;
-	text-center: center;
-	margin-bottom: 50px;
-	position: relative;
-}
-
-.subscribe-inner p {
-	color: #888;
-	margin-bottom: 30px;
-}
-
-.subscribe-inner .sub-btn {
-	margin: 0;
-	width: 12rem;
-	padding: 18px 40px;
-	border-radius: 30px;
-	min-width: 12rem;
-	position: absolute;
-	top: 0;
-	border: none;
-	bottom: 0;
-	right: 0;
-}
-
-.subscribe-inner .sub-btn i {
-	margin-right: 5px;
-}
-
-.subscribe-inner .form-control {
-	position: relative;
-	background: #252d37;
-	border: 1px solid #252d37;
-	border-radius: 0px;
-	box-shadow: none;
-	color: #fff !important;
-	border-radius: 30px;
-	height: 55px;
-	margin-right: -1px;
-	width: 90%;
-}
-
-.subscribe-inner .form-control:focus {
-	color: #212121;
-	border-color: #0000ff;
-	outline: 0;
-}
-
-.subscribe-inner .form-inline {
-	position: relative;
-	margin-bottom: 30px;
-	margin: 0 auto;
-	width: 100%;
-}
-
-.footer-logo {
-	margin-bottom: 50px;
-}
-
 /* ==========================================================================
    Countdown Style Start
    ========================================================================== */
@@ -3410,9 +3344,7 @@ h3 {
 	color: white;
 }
 section#contact-text,
-footer {
-	background: #000;
-}
+
 #contact-text .contact-wrapper {
 	background: #1c1c1c;
 }
