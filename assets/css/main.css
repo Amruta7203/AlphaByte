@@ -1972,8 +1972,8 @@ h1 {
 	max-width: 18%;
 }
 #information-bar .inforation-wrapper i {
-	background-image: linear-gradient(65deg, #2b72ad 0, #0099ff 50%);
-	font-weight: 700;
+  background-image: linear-gradient(65deg, #2b72ad 0, #0099ff 50%);
+  font-weight: 700;
 }
 .schedule .card-header {
 	position: relative;
@@ -3362,7 +3362,7 @@ h2.section-title.wow.fadeInUp.animated,
 	background: #1c1c1c;
 }
 #information-bar .inforation-wrapper {
-	background-image: linear-gradient(0deg, #000 0, #000c44 100%);
+  background-image: linear-gradient(0deg, #21063e 0, #5c0465 100%);
 }
 #information-bar ul li span b {
 	color: aliceblue;
@@ -4078,4 +4078,9 @@ nav {
     position: relative;
     margin-bottom: 10px;
 }
+}
+
+.registration-timeline {
+  font-size: 32px !important;
+  line-height: 40px;
 }
