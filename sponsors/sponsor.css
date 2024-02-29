@@ -33,13 +33,16 @@
     /* height: 100vh; */
     /* width: 100vw; */
     /* background-repeat: round; */
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
-    margin-left: 1px;
+    margin-left: auto;
     margin-right: 5px;
     box-shadow: -2px 2px 14px -7px white;
     display: block;
     margin-right: auto;
+}
+.rulebook:hover{
+    box-shadow: 0px 2px 27px 8px #b60599;
 }
 
 .roulebook-container{
@@ -113,6 +116,11 @@ cursor: pointer;
     .rulebook-button{
         top: 62%;
         left: 41%;        
+    }
+
+    .rulebook{
+        width: 100%;
+        margin-left: 1%;
     }
     
 }
