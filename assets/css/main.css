@@ -1294,8 +1294,8 @@ a.back-to-top:focus {
 
 .navbar-expand-lg .navbar-toggler {
   background: transparent;
-  border: 1px solid #2b72ad;
-  background-image: linear-gradient(65deg, #2b72ad 0, #0099ff 50%);
+  border: 1px solid #9971c3;
+  background-image: linear-gradient(65deg, #850c91 0, #d07ad8 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
