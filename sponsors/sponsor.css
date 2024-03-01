@@ -1,134 +1,168 @@
-#sponsor-col{
-    /* margin: 20px; */
-    display: flex;
-    justify-content: center;
-    background-color: #0B1217;
-    font-size: 4px;
-    padding:15px;
-    border-radius: 30px;
+#sponsor-col {
+  /* margin: 20px; */
+  display: flex;
+  justify-content: center;
+  background-color: #0b1217;
+  font-size: 4px;
+  padding: 15px;
+  border-radius: 30px;
 }
 
-#sponsor-img{
-    width: 60px;
-    margin-bottom: -39px;
-    height: 60px;
+.sponsor {
+  display: flex;
+  justify-content: center;
 }
 
-#sponsor-heading-new{
-    margin-left: 5px;
-    color: white;
-    font-size: x-large;
-    margin-left: 10px;
+#sponsor-img {
+  width: 100%;
+  height: 87%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+#sponsor-heading-new {
+  margin-left: 5px;
+  color: white;
+  font-size: x-large;
+  margin-left: 10px;
 }
 
-.sponsor-light{
-    background-color: #1a2128;
+.sponsor-light {
+  background-color: #1a2128;
 }
 
-.rulebook{
-    /* background-image: url("./sponsors/rulebook_desktop.png");  */
-    /* height: 100vh; */
-    /* border-radius: 15px; */
-    /* width: max-content; */
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* background-repeat: round; */
-    width: 80%;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: 5px;
-    box-shadow: -2px 2px 14px -7px white;
-    display: block;
-    margin-right: auto;
-}
-.rulebook:hover{
-    box-shadow: 0px 2px 27px 8px #b60599;
+.rulebook {
+  /* background-image: url("./sponsors/rulebook_desktop.png");  */
+  /* height: 100vh; */
+  /* border-radius: 15px; */
+  /* width: max-content; */
+  /* height: 100vh; */
+  /* width: 100vw; */
+  /* background-repeat: round; */
+  width: 100%;
+  border-radius: 15px;
+  margin-left: 1px;
+  margin-right: 5px;
+  box-shadow: -2px 2px 14px -7px white;
+  display: block;
+  margin-right: auto;
 }
 
-.roulebook-container{
-    background-color: black;
-    padding-top: 58px;
-    padding-bottom:35px
+.roulebook-container {
+  background-color: black;
+  padding-top: 58px;
+  padding-bottom: 35px;
 }
 
-.rulebook-button{
-    position: absolute;
-    top: 83%;
-    /* top: 1045%; */
-    left: 48%;
-    /* transform: translate(-50%, -50%); */
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
+.rulebook-button {
+  position: absolute;
+  top: 83%;
+  /* top: 1045%; */
+  left: 48%;
+  /* transform: translate(-50%, -50%); */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
-.rulebook-button:hover{
-    box-shadow: 1px 2px 15px 4px rgba(0, 203, 254, 0.448);;
-    -webkit-box-shadow: 1px 2px 15px 4px rgba(0, 203, 254, 0.448);
-    -moz-box-shadow: 2px 8px 60px 20px rgba(0, 203, 254, 0.59);
+.rulebook-button:hover {
+  box-shadow: 1px 2px 15px 4px rgba(0, 203, 254, 0.448);
+  -webkit-box-shadow: 1px 2px 15px 4px rgba(0, 203, 254, 0.448);
+  -moz-box-shadow: 2px 8px 60px 20px rgba(0, 203, 254, 0.59);
 }
 
-.rulebook-section{
-    position: relative;
+.rulebook-section {
+  position: relative;
+  width: 100%;
+}
+
+.sponsor-glass-morph-redbull {
+  background: #173083;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 10rem;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sponsor-glass-morph {
+  background: #fff;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 10rem;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sponsor-glass-morph:hover {
+  -webkit-backdrop-filter: blur(20px);
+}
+/* For screens smaller than 768px (typical phone screens) */
+@media only screen and (max-width: 767px) {
+  .sponser-main-section {
+    padding: 20px 20px 20px 70px;
+  }
+}
+
+@media only screen and (min-width: 515px) and (max-width: 768px) {
+  .sponser-main-section {
+    padding: 20px 20px 20px 105px !important;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .sponser-main-section {
+    padding: 20px 20px 20px 50px !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #sponsor-img {
     width: 100%;
+    height: 100%;
+  }
+
+  #sponsor-heading-new {
+    font-size: 1.1rem;
+  }
+
+  .rulebook-button {
+    top: 62%;
+    left: 41%;
+  }
 }
 
-.sponsor-glass-morph{
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-    height: 10rem;
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 1rem;
-    transition: background-color 0.3s ease;
+@media screen and (max-width: 360px) {
+  .rulebook-button {
+    top: 65% !important;
+    left: 33%;
+  }
 }
 
-.sponsor-glass-morph:hover{
-    background: rgba( 0, 204, 255, 0.65 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 20px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-cursor: pointer;
+.sponsers-main-div {
+  width: 300px;
+  height: 180px;
 }
-
-@media screen and (max-width:990px) {
-    #sponsor-img{
-        width: 35px;
-        height: 35px;
-    }
-    
-    #sponsor-heading-new{
-        font-size: 1.1rem;
-    }
-
-    .rulebook-button{
-        top: 62%;
-        left: 41%;        
-    }
-
-    .rulebook{
-        width: 100%;
-        margin-left: 1%;
-    }
-    
-}
-
-@media screen and (max-width: 360px)
-{
-    .rulebook-button {
-        top: 65% !important;
-        left: 33%;
-    }
+.sponser-main-section {
+  background-color: #0b1217;
+  padding: 20px 20px 20px 20px;
 }
