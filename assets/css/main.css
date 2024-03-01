@@ -602,6 +602,8 @@ a:active {
   .green {
     width: 250px; /* Adjust button width for mobile phones */
     font-size: 18px; /* Reduce font size for mobile phones */
+    border-radius: 8px;
+    padding: 13px;
   }
 
   .svg-wrapper {
