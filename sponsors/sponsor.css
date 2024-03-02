@@ -39,15 +39,15 @@
   /* width: 100vw; */
   /* background-repeat: round; */
   width: 80%;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: 5px;
-    box-shadow: -2px 2px 14px -7px white;
-    display: block;
-    margin-right: auto;
-    transition: box-shadow 0.3s ease;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: 5px;
+  box-shadow: -2px 2px 14px -7px white;
+  display: block;
+  margin-right: auto;
+  transition: box-shadow 0.3s ease;
 }
-.rulebook:hover{
+.rulebook:hover {
   box-shadow: 0px 2px 27px 8px #b60599;
 }
 .roulebook-container {
@@ -80,6 +80,57 @@
 .rulebook-section {
   position: relative;
   width: 100%;
+}
+
+.sponsor-glass-morph-polygon {
+  background: #cfcfd1;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 10rem;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sponsor-glass-morph-replit {
+  background: #e6e6e6;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 10rem;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sponsor-glass-morph-solana {
+  background: #e5e5e5;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 10rem;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .sponsor-glass-morph-redbull {
@@ -152,7 +203,7 @@
     top: 62%;
     left: 41%;
   }
-  .rulebook{
+  .rulebook {
     width: 100%;
     margin-left: 1%;
   }
