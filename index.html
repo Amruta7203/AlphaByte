@@ -28,8 +28,27 @@
 
     <!-- Sponsors Style -->
     <link rel="stylesheet" type="text/css" href="./sponsors/sponsor.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @media screen and (max-width: 600px) {
+        .video-container video {
+            /* transform: rotate(90deg); Rotate the video 90 degrees for vertical viewing */
+            transform-origin: center center; /* Set the origin of rotation */
+            width: auto;
+            height: 100%; /* Ensure the video height fills the container after rotation */
+        }
+      }
 
-  </head>
+      @media screen and (max-width: 900px) {
+        .video-container video {
+            /* transform: rotate(90deg); Rotate the video 90 degrees for vertical viewing */
+            transform-origin: center center; /* Set the origin of rotation */
+            width: auto;
+            height: 100%; /* Ensure the video height fills the container after rotation */
+        }
+      }
+    </style>
+</head>
   <body>
 
     <!-- Header Area wrapper Starts -->
@@ -156,18 +175,19 @@
     <!-- Count Bar End -->
 
     <!-- Video Section Start -->
-    <div class="ready-to-play" id="video-section">
+    <div class="ready-to-play video-container" id="video-section" onclick="changePlayeButttonVisibility()">
       <video id="bgvid" class="stop" loop>
-        <source src="./assets/video/anantya.mp4" type="video/mp4">
+        <source src="./assets/video/anantya.mp4" type="video/mp4" id="video-source">
       </video>
       <div id="polina" class="video-text">
         <div class="tb-t">
             <div class="tb-c">
-              <div class="polina"><button><i class='lni-play'></i></button></div>
+              <div class="polina" id="play-button"><button><i class='lni-play'></i></button></div>
             </div>
         </div>
       </div>
     </div>
+
     <!-- Video Section End -->
 
     <!-- Information Bar Start -->

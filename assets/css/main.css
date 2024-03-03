@@ -3684,6 +3684,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.05); /* Adjust opacity as needed */
     backdrop-filter: blur(20px); /* Apply blur effect */
   }
+
 }
 
 @media (max-width: 600px) {
